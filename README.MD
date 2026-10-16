@@ -7,7 +7,7 @@
 
 **Kingdom Enhanced** is a high-performance native C++ enhancement modification and quality-of-life suite for **Kingdom Two Crowns** (IL2CPP 64-bit, DirectX 12). 
 
-Created by **Zaykus** as the official standalone continuation and complete rewrite of the original Kingdom Enhanced project, engineered from the ground up to restore, stabilize, and dramatically expand the game's modding capabilities.
+Created by **Zaykus** as the official standalone continuation and complete rewrite of the original Kingdom Enhanced project also know at  KTC-mod, engineered from the ground up to restore, stabilize, and dramatically expand the game's modding capabilities.
 
 ---
 

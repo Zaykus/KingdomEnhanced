@@ -1,4 +1,4 @@
-# Kingdom Enhanced (v0.2.0-alpha)
+# Kingdom Enhanced
 
 [![Release](https://img.shields.io/badge/Release-v0.2.0--alpha-gold.svg)](https://github.com/Zaykus/KTC-mod)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20x64%20(DirectX%2012)-blue.svg)](#)

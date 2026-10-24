@@ -1,6 +1,6 @@
 # Kingdom Enhanced
 
-[![Release](https://img.shields.io/badge/Release-v0.2.0--alpha-gold.svg)](https://github.com/Zaykus/KTC-mod)
+[![Release](https://img.shields.io/badge/Release-v0.3.0--alpha-gold.svg)](https://github.com/Zaykus/KTC-mod)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20x64%20(DirectX%2012)-blue.svg)](#)
 [![Unity Engine](https://img.shields.io/badge/Unity-IL2CPP%2064--bit-lightgrey.svg)](#)
 [![License](https://img.shields.io/badge/License-MIT%20%2F%20Educational-green.svg)](#legal-disclaimer--eula-compliance)

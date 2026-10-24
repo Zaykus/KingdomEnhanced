@@ -11,12 +11,6 @@ Created by **Zaykus** as the official standalone continuation and complete rewri
 
 ---
 
-## Preview
-
-▶ **[Watch the Weapons preview video](https://github.com/Zaykus/KingdomEnhanced/blob/main/Weapons.mp4)**
-
----
-
 ## What's New & What Was Ported / Fixed
 
 This project revitalizes the legacy mod into a standalone, crash-free, zero-dependency release:

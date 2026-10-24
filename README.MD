@@ -57,7 +57,7 @@ This project revitalizes the legacy mod into a standalone, crash-free, zero-depe
 - **Director Threat Scaling**: Fine-tune the AI director's threat evaluation logic.
 - **No Crown Stealing**: Protect your crown from being snatched by Greed snatchers.
 
-### 5. Abevol Kingdom Minimap (M)
+### 5. Kingdom Minimap (M)
 - Toggleable top screen radar showing:
   - Monarch position & orientation
   - Campfire / Town center

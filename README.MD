@@ -1,118 +1,142 @@
+<div align="center">
+
 # Kingdom Enhanced
 
-[![Release](https://img.shields.io/badge/Release-v0.5.0--alpha-gold.svg)](https://github.com/Zaykus/KTC-mod)
-[![Platform](https://img.shields.io/badge/Platform-Windows%20x64%20(DirectX%2012)-blue.svg)](#)
+[![Release](https://img.shields.io/badge/Release-v0.5.0--alpha-gold.svg)](https://github.com/Zaykus/KingdomEnhanced/releases)
+[![Platform](https://img.shields.io/badge/Platform-Windows%20x64%20(DirectX%2011%20%2F%2012)-blue.svg)](#)
 [![Unity Engine](https://img.shields.io/badge/Unity-IL2CPP%2064--bit-lightgrey.svg)](#)
 [![License](https://img.shields.io/badge/License-MIT%20%2F%20Educational-green.svg)](#legal-disclaimer--eula-compliance)
 
-**Kingdom Enhanced** is a high-performance native C++ enhancement modification and quality-of-life suite for **Kingdom Two Crowns** (IL2CPP 64-bit, DirectX 12). 
+**Kingdom Enhanced** is a high-performance native C++ enhancement modification and quality-of-life suite for **Kingdom Two Crowns** (IL2CPP 64-bit, DirectX 11 & DirectX 12). 
 
-Created by **Zaykus** as the official standalone continuation and complete rewrite of the original Kingdom Enhanced project also know as KTC-mod, engineered from the ground up to restore, stabilize, and dramatically expand the game's modding capabilities.
+Created by **Zaykus** as the official standalone continuation and complete native rewrite of the original Kingdom Enhanced project (also known as KTC-mod), engineered from the ground up to restore, stabilize, and dramatically expand the game's modding capabilities with zero external mod loader dependencies.
+
+<br/>
+
+<img width="750" alt="Kingdom Enhanced Banner" src="https://raw.githubusercontent.com/Zaykus/KingdomEnhanced/main/preview.png" />
+
+</div>
 
 ---
 
+<div align="center">
 
+## What's New & Ported in v0.5.0-alpha
 
-## What's New & What Was Ported / Fixed
+</div>
 
-This project revitalizes the legacy mod into a standalone, crash-free, zero-dependency release:
+This project revitalizes the legacy mod into a standalone, crash-free, zero-dependency suite:
 
-- **100% Native C++ & Zero-Freeze Engine**: Unlike older injection mods that caused picture freezes or required heavy C# mono loaders, Kingdom Enhanced runs via a native `version.dll` proxy hooked directly into the game's DirectX 12 swapchain and IL2CPP runtime.
-- **Fixed Picture & Render Freezes**: Replaced deprecated blocking command queue waits with a dedicated asynchronous main-thread action pipeline.
-- **DirectX 12 ImGui Overlay**: High-fidelity medieval fantasy UI styled after parchment and gold leaf that scales seamlessly from 1080p to 4K displays.
-- **Fixed Boulder Launching Direction**: The catapult boulder launch hotkey (`Spacebar`) now accurately factors monarch facing direction (Left & Right) rather than firing only to the right.
-- **Fixed Kill All Enemies & Utility Cheats**: Rewritten to target native IL2CPP `Damageable.DestroyNow()` and `Enemy.Despawn()`, resolving previous silent failures.
-- **Abevol Interactive Minimap (M)**: Real-time top radar tracking kingdom walls, portal locations, vagrant camps, greed wave clusters, and player position with an optional full reveal (`Ctrl+F`).
-- **Kingdom Monitor HUD (F4)**: A customizable, translucent on-screen heads-up display showing active citizens, builders, archers, coins, gems, and steed stamina.
-- **Trilingual & European Localization**: Full native font rendering for **English**, **中文 (Chinese)**, **한국어 (Korean)**, **Español (Spanish)**, **Deutsch (German)**, and **Français (French)**, complete with bold typography support.
+- **100% Native C++ Architecture**: Unlike legacy mods requiring external C# Mono injectors or BepInEx loaders that cause freezes, Kingdom Enhanced runs via a native `version.dll` proxy hooked directly into the game's DirectX 11/12 swapchain and IL2CPP runtime.
+- **Knight Squad Tactical Transfer**: Instantly rally knight squads and their archer escorts to march across the settlement to reinforce the active West or East frontier wall.
+- **Royal Banking & Treasury System**: In-menu deposit and withdrawal vault controls, automated bank sweepers for ground coins with payment protection, and auto-bank overflow redirect.
+- **Complete & Launch Boat Automation**: Complete repair of unbuilt shipwrecks, purchasing and stacking of parts, hull mounting, and direct dock launch.
+- **Smart Edge-Wall Forest Clearing**: Outermost edge-wall perimeter tree felling with directional West/East feedback and strict 18m sanctuary protection around camps and merchant huts.
+- **Symmetrical Panoramic Top Minimap (F2)**: Dual-wing projection anchoring the Castle/Campfire dead-center at 50% screen width, with interactive right-click context menus, quick filter pills, and zoom mode.
+- **Biome & Weapon Protections**: Strict DLC restrictions (Pikes in Medieval/Olympus, Katanas in Shogun), unemployed citizen requirements, standalone fire arrows toggle, and independent Archer/Tower fire rate sliders.
+- **Divine Relics & Handsocket Artifacts**: Equip and activate Norse Lands and Call of Olympus mythical relics (Thor's Hammer, Hel's Scythe, Heimdall's Horn, Artemis Bow, etc.) with functional handsocket attachments.
+- **Island Travel Continuity**: Big wallet capacity presets and custom mount speed multipliers persist across island travel on the same campaign without save crashes.
+- **Kingdom Monitor HUD (F4)**: Real-time population demographics, wealth, and mount stamina telemetry with customizable styles.
+- **6-Language Native Font Localization**: Full Latin, CJK, and Korean typography for English, Chinese, Korean, Spanish, German, and French.
 - **Live In-Menu Action Logger**: Real-time diagnostic terminal inside the mod menu (`F1 -> Logs`) and file logging (`KingdomEnhanced.log`) providing instant feedback on every user action.
 
 ---
 
+<div align="center">
+
 ## Features
 
-### 1. Main & Player Cheats
-- **God Mode**: Complete invulnerability for your monarch against all Greed attacks.
-- **Infinite Mount Stamina**: Unlimited sprint for any mount without tiring or eating grass.
-- **Speed Multipliers**: Adjustable monarch move speed (1x, 1.5x, 2x, 4x, or custom slider).
-- **Player & Mount Resizer**: Dynamically scale your monarch's visual size.
-- **Drop Tool & Resources**: Spawn worker hammers, archer bows, coins (10, 50, 100, or fill wallet), and gems anywhere on the map.
-- **Combat Utilities**: Instant Kill All Enemies, Destroy Portals, and Recruit All Vagrants.
+</div>
 
-### 2. Unit & Greed Spawner
-- **Civilian & Military Units**: Spawn Peasants/Villagers, Vagrants/Beggars, Archers, Builders/Workers, Farmers, Pikemen, Knights, Norse Berserkers, and Shogun Ninjas.
-- **Hermits & Specialists**: Spawn Bakery, Ballista, Stable, Horn, Fire, Warrior, and Berserker Hermits on demand.
-- **Greed Spawner**: Spawn Greedlings, Masked Greed, Breeders, Crown Stealers, Floaters/Squids, Crushers, Greed Knights, and Greed Archers for custom wave defense challenges.
-- **Spawn Positioning**: Toggle between spawning at the kingdom campfire or directly at your monarch's coordinates.
+### 1. Monarch, Economy & Royal Banking
+- **God Mode & Infinite Stamina**: Complete invulnerability for your monarch against all Greed attacks, plus unlimited sprint for any mount without tiring or eating grass.
+- **Speed Multipliers & Resizer**: Adjustable monarch move speed (1.0x to 5.0x) and dynamic visual scale adjustments.
+- **Expanded Royal Purse**: Configurable big bag capacity presets (100, 250, 500, or 1000 coins) that persist cleanly across islands.
+- **Royal Banker Vault Controls**: Deposit +10 and Withdraw -10 coins directly to/from the Banker without manual coin dropping.
+- **Smart Ground Coin Sweeper**: Automatically collects coins dropped from hunting, farming, and water spills into the bank vault with payment animation immunity.
+- **Auto-Bank Overflow**: Automatically sweeps excess coins into the vault when the purse is full to prevent water loss.
 
-### 3. Lab & World Experiments
-- **Season Controller**: Switch instantaneously between Spring, Summer, Autumn, or Winter, or lock eternal summer.
-- **Time Controls**: Skip time phases (day/night transition) by 6-hour increments.
-- **Weather & Blood Moon**: Clear rainy/snowy weather and disable blood moon events.
-- **Defense & Nature Boosts**: Self-repairing walls, tree regrowth accelerator, and buoyant currency that floats instead of sinking into water.
-- **Combat Modifiers**: Rapid-fire archer/tower boost, ballista/catapult reload speed and projectile speed multipliers, berserker rage mode, and steed buff aura duration.
+### 2. Military, Combat & Tactical Defense
+- **Knight Squad Tactical Transfer**: Rally and transfer Knight squads to the Left or Right frontier wall with coordinated unit march logic.
+- **Drop Tools Suite**: Spawn worker hammers, archer bows, pikes, katanas, and Norse round shields anywhere on the map with biome availability checks and idle peasant validation.
+- **Norse Lands Round Shields**: Equips all citizen types (Archers, Builders, Farmers, Peasants) to form defensive shieldwalls effortlessly.
+- **Standalone Flaming Arrows**: Toggles fire arrow upgrades on archers without altering attack speed.
+- **Independent Fire Rate Sliders**: Fine-tune Ground Archer fire rate and Watchtower fire rate independently (1.0x to 5.0x).
+- **Divine Artifacts & Relics**: Equip and fire legendary mythical weapons (Thor's Hammer, Hel's Scythe, Heimdall's Horn, Artemis Bow) with functional handsocket attachments.
+- **Combat Utilities**: Instant Kill All Enemies, Destroy Portals, and Catapult boulder launch (`Spacebar`) factoring monarch facing direction.
 
-### 4. Hard Mode & Difficulty Director
-- **Wave Multiplier**: Scale enemy wave counts from 0.1x to 10.0x for colossal survival sieges.
-- **Enemy Speed Multiplier**: Adjust enemy movement speed from 0.5x to 3.0x.
-- **Portal Spawn Rate & Greed Queen HP**: Customize portal defense intensity and boss hitpoints.
-- **Director Threat Scaling**: Fine-tune the AI director's threat evaluation logic.
-- **No Crown Stealing**: Protect your crown from being snatched by Greed snatchers.
+### 3. Unit, Mount & Greed Spawner
+- **Civilian & Combatant Spawner**: Spawn Peasants/Villagers, Vagrants/Beggars, Archers, Builders/Workers, Farmers, Pikemen, Knights, Berserkers, and Ninjas.
+- **Mount & Hermit Spawner**: Spawn all 27+ mounts across all DLCs with duplicate prevention, plus Hermits and wildlife.
+- **Greed Wave Spawner**: Spawn Greedlings, Masked Greed, Breeders, Crown Stealers, Floaters, Crushers, Greed Knights, and Greed Archers.
+- **Unified Target Coordinates**: Select whether spawned units appear near the Monarch, at the Castle Center, at the Left Wall, or at the Right Wall.
 
-### 5. Kingdom Minimap (M)
-- Toggleable top screen radar showing:
-  - Monarch position & orientation
-  - Campfire / Town center
-  - Left and Right outermost defensive walls
-  - Active and destroyed Portals
-  - Beggar / Vagrant tree camps with living vagrant counters
-  - Greed wave spawn clusters marching toward your walls
-- Press `Ctrl + F` while the map is active to reveal all fog of war and off-screen island landmarks.
+### 4. Kingdom Maintenance & World Lab
+- **Instant Wall Repair**: Restore all defensive fortifications across the island to 100% HP with a single click.
+- **Complete & Launch Boat**: Automatically repairs unbuilt shipwrecks, purchases missing parts, stacks materials, mounts hull pieces, and pushes the vessel directly to the dock.
+- **Smart Edge-Wall Forest Clearing**: Safely clears trees strictly outside outermost perimeter walls (West, East, or Both) while protecting vagrant camp and merchant sanctuaries (>18m clearance).
+- **Weather & Season Controller**: Switch instantaneously between Spring, Summer, Autumn, or Winter, lock eternal summer, or set Clear, Rain, Fog, or Storm weather.
+- **Time Controls**: Skip days, fast-forward to dawn or nightfall, and disable Blood Moons.
+
+### 5. Symmetrical Panoramic Minimap (F2)
+- **Dead-Center Castle Projection**: Symmetrical dual-wing coordinate system pins the Castle/Campfire at the exact 50% dead-center of the screen regardless of island terrain asymmetry.
+- **Full Island Tracking**: Real-time positions of your Monarch, Castle, Walls, Portals, Vagrant Camps, Hermits, Steeds, and Greed waves.
+- **Interactive POI Context Menu**: Right-click any minimap icon to Teleport Here, Recruit Vagrants, Destroy Portals, or Repair Walls.
+- **Quick Filter Pills**: Toggle specific categories (All, Camps, Mounts, Shrines/Chests, Defense, Threats) with zero frame stutter.
 
 ### 6. Kingdom Monitor HUD (F4)
-- Floating status dashboard displaying:
-  - Island day counter & reign metrics
-  - Citizen census (total citizens, vagrants, archers, builders, farmers)
-  - Fortifications (standing walls, active portals)
-  - Wealth & Mount info (held coins, gems, mount name, stamina percentage)
-- Translucent background with dynamic alpha adjustment (35%, 55%, 75%, 95%) and 4 aesthetic themes (Classic, Neon, Light, Ghost).
+- **Real-Time Census**: Live demographic breakdown (Peasants, Archers, Builders, Knights, Squires, Pikemen, Ninjas, Farmers, Beggars).
+- **Fortifications & Economy**: Fortified perimeter status, standing walls, portal counts, purse coins, vault coins, and gems.
+- **Mount Telemetry**: Active steed name, mount feed status, and live stamina gauge.
+- **Customizable Appearance**: Dynamic alpha transparency adjustment and customizable visual themes.
 
 ---
+
+<div align="center">
 
 ## Default Controls & Hotkeys
 
+</div>
+
 | Hotkey | Action |
 |---|---|
-| **F1** | Toggle Main Enhancement Menu |
-| **F4** | Toggle Translucent Kingdom Monitor HUD |
-| **M** | Toggle Abevol Kingdom Minimap |
-| **N** | Toggle Compact Mount Stamina Gauge |
+| **F1** or **Insert** | Toggle Main Enhancement Menu |
+| **F2** | Toggle Symmetrical Panoramic Top Minimap |
+| **F3** | Toggle Fast Forward Speed |
+| **F4** | Toggle Kingdom Monitor HUD |
 | **Spacebar** | Launch Catapult Boulder (in facing direction) |
-| **C** | Drop Coins |
-| **G** | Drop Gems |
-| **T** | Teleport Monarch to Mouse Cursor |
-| **Ctrl + F** | Toggle Minimap Full Island Reveal |
+| **C** | Drop Coins (Configurable burst amount) |
+| **G** | Drop Gems (Configurable burst amount) |
+| **F** | Trigger Equipped Special Weapon / Relic Ability |
 
-*All hotkeys and keybinds can be customized inside the mod menu under **Settings** or directly in `KingdomEnhanced.ini`.*
+*All hotkeys can be fully customized in-game via **Menu -> Settings** or directly in `KingdomEnhanced.ini`.*
 
 ---
 
+<div align="center">
+
 ## Installation
 
-1. Download the latest release archive (`KingdomEnhanced-v0.1.0-alpha.zip`).
+</div>
+
+1. Download the latest release archive (`KingdomEnhanced-v0.5.0-alpha.zip`).
 2. Extract the archive contents:
    - `version.dll`
    - `KingdomEnhanced.ini` (optional default configuration)
-3. Move `version.dll` and `KingdomEnhanced.ini` directly into your Kingdom Two Crowns game folder (the directory containing `KingdomTwoCrowns.exe`).
+3. Move `version.dll` and `KingdomEnhanced.ini` directly into your Kingdom Two Crowns game folder (the directory containing `KingdomTwoCrowns.exe`):
    - *Example Steam path*: `C:\Program Files (x86)\Steam\steamapps\common\Kingdom Two Crowns\`
-4. Launch the game normally. Press **F1** once in-game to open the mod menu.
+4. Launch the game normally and press **F1** to open the menu.
 
 ### Uninstallation
 Simply delete `version.dll` and `KingdomEnhanced.ini` from your game folder. The original game files remain completely untouched.
 
 ---
 
+<div align="center">
+
 ## Configuration (`KingdomEnhanced.ini`)
+
+</div>
 
 The mod automatically generates and maintains `KingdomEnhanced.ini` in the game directory. Settings can be edited live via the **F1** in-game menu or manually with any text editor:
 
@@ -121,10 +145,10 @@ The mod automatically generates and maintains `KingdomEnhanced.ini` in the game 
 Language=English      ; English, Chinese, Korean, Spanish, German, French
 
 [Modules]
-EnableMinimap=1       ; Top radar map
-EnableStaminaBar=1    ; Mount stamina bar
+EnableMinimap=1       ; Panoramic top radar map
+EnableStaminaBar=1    ; Mount stamina gauge
 EnableHotkeys=1       ; Boulder/teleport hotkeys
-UIScale=1.00          ; 1.00x - 2.50x display scale
+UIScale=1.00          ; 0.75x - 2.50x display scale
 BoldFont=0            ; 1 = Bolder text font
 MonitorAlpha=0.55     ; Translucency of F4 HUD
 
@@ -136,20 +160,31 @@ SpeedMultiplier=2.00
 
 ---
 
+<div align="center">
+
 ## Frequently Asked Questions (FAQ)
 
+</div>
+
 #### Q: Does this mod work with the latest Steam / GOG release of Kingdom Two Crowns?
-**A:** Yes. The mod is built against the 64-bit Unity IL2CPP runtime and DirectX 12 graphics engine.
+**A:** Yes. The mod is built against the 64-bit Unity IL2CPP runtime with native DirectX 11 and DirectX 12 renderers.
 
 #### Q: Do I need BepInEx, MelonLoader, or Mono?
-**A:** No. Kingdom Enhanced is completely standalone. It does not require any third-party mod loader or external runtime framework.
+**A:** No. Kingdom Enhanced is completely standalone. It operates via a native proxy DLL without requiring any third-party mod loader or external runtime framework.
 
 #### Q: Will this cause lag or game stutter?
-**A:** Maybe. All rendering is synchronized to the native swapchain present pipeline, and engine interactions run asynchronously on Unity's main thread to prevent frame drops.
+**A:** No. All rendering is synchronized to the native swapchain present pipeline, and engine interactions run asynchronously on Unity's main thread to prevent frame drops, lag, or stutter.
+
+#### Q: Can I use this on all DLCs?
+**A:** Yes. Fully compatible with Medieval (Classic), Shogun, Dead Lands, Norse Lands, and Call of Olympus.
 
 ---
 
+<div align="center">
+
 ## Legal Disclaimer & EULA Compliance
+
+</div>
 
 > [!IMPORTANT]
 > **Please read this disclaimer carefully before using this software.**
@@ -163,9 +198,17 @@ SpeedMultiplier=2.00
 
 ---
 
+<div align="center">
+
 ## Credits & Acknowledgments
-- **Zaykus** — Architecture, IL2CPP reverse-engineering, D3D12 hooking, and modern rewrite.
-- **Abevol** — Inspiration for the top kingdom radar map layout and telemetry mechanics.
-- **Original Kingdom Enhanced Team** — Gratitude for pioneering Kingdom modding concepts.
-- **Dear ImGui** (Omar Cornut) — Immediate mode graphical user interface library.
-- **MinHook** (Tsuda Kageyu) — The Minimalistic x86/x64 API Hooking Library.
+
+</div>
+
+- **Zaykus** — Lead Developer  
+  Architecture, Native C++ Suite, Accessibility systems, DirectX 12 Hook & UI everything lol
+- **Abevol** — Framework & Engine Research  
+  Engine analysis and IL2CPP reverse engineering groundwork + open source mod ([https://github.com/abevol](https://github.com/abevol))
+- **Community Testers and special thanks to Zeternal-1**  
+  Accessibility validation, testing, profiling, and community feedback
+- **Dear ImGui** (Omar Cornut) — Immediate mode graphical user interface library
+- **MinHook** (Tsuda Kageyu) — The Minimalistic x86/x64 API Hooking Library

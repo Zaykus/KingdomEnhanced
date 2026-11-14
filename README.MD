@@ -2,7 +2,7 @@
 
 # Kingdom Enhanced
 
-[![Release](https://img.shields.io/badge/Release-v0.5.0--alpha-gold.svg)](https://github.com/Zaykus/KingdomEnhanced/releases)
+[![Release](https://img.shields.io/badge/Release-v0.6.0--alpha-gold.svg)](https://github.com/Zaykus/KingdomEnhanced/releases)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20x64%20(DirectX%2011%20%2F%2012)-blue.svg)](#)
 [![Unity Engine](https://img.shields.io/badge/Unity-IL2CPP%2064--bit-lightgrey.svg)](#)
 [![License](https://img.shields.io/badge/License-MIT%20%2F%20Educational-green.svg)](#legal-disclaimer--eula-compliance)
@@ -21,24 +21,22 @@ Created by **Zaykus** as the official standalone continuation and complete nativ
 
 <div align="center">
 
-## What's New & Ported in v0.5.0-alpha
+## What's New in v0.6.0-alpha
 
 </div>
 
-This project revitalizes the legacy mod into a standalone, crash-free, zero-dependency suite:
+This release expands native performance, localization, construction QoL, and tester-reported stability across all campaigns:
 
 - **100% Native C++ Architecture**: Unlike legacy mods requiring external C# Mono injectors or BepInEx loaders that cause freezes, Kingdom Enhanced runs via a native `version.dll` proxy hooked directly into the game's DirectX 11/12 swapchain and IL2CPP runtime.
-- **Knight Squad Tactical Transfer**: Instantly rally knight squads and their archer escorts to march across the settlement to reinforce the active West or East frontier wall.
-- **Royal Banking & Treasury System**: In-menu deposit and withdrawal vault controls, automated bank sweepers for ground coins with payment protection, and auto-bank overflow redirect.
-- **Complete & Launch Boat Automation**: Complete repair of unbuilt shipwrecks, purchasing and stacking of parts, hull mounting, and direct dock launch.
-- **Smart Edge-Wall Forest Clearing**: Outermost edge-wall perimeter tree felling with directional West/East feedback and strict 18m sanctuary protection around camps and merchant huts.
-- **Symmetrical Panoramic Top Minimap (F2)**: Dual-wing projection anchoring the Castle/Campfire dead-center at 50% screen width, with interactive right-click context menus, quick filter pills, and zoom mode.
-- **Biome & Weapon Protections**: Strict DLC restrictions (Pikes in Medieval/Olympus, Katanas in Shogun), unemployed citizen requirements, standalone fire arrows toggle, and independent Archer/Tower fire rate sliders.
-- **Divine Relics & Handsocket Artifacts**: Equip and activate Norse Lands and Call of Olympus mythical relics (Thor's Hammer, Hel's Scythe, Heimdall's Horn, Artemis Bow, etc.) with functional handsocket attachments.
-- **Island Travel Continuity**: Big wallet capacity presets and custom mount speed multipliers persist across island travel on the same campaign without save crashes.
-- **Kingdom Monitor HUD (F4)**: Real-time population demographics, wealth, and mount stamina telemetry with customizable styles.
-- **6-Language Native Font Localization**: Full Latin, CJK, and Korean typography for English, Chinese, Korean, Spanish, German, and French.
-- **Live In-Menu Action Logger**: Real-time diagnostic terminal inside the mod menu (`F1 -> Logs`) and file logging (`KingdomEnhanced.log`) providing instant feedback on every user action.
+- **Instant Build Mode**: Completes paid construction and wall upgrades immediately (`ConstructionBuildingComponent.AllAutoBuild` & `WorkableBuilding.CompleteConstruction`), distinct from **Hyper Builders**, automatically locking build speed sliders while active.
+- **Full Arabic Localization & Right-to-Left (RTL) UI**: Complete Arabic dictionary with contextual shaping, bidirectional text reordering, mirrored sidebar/tab grids, right-aligned checkboxes/combos/sliders, localized minimap POIs, and RTL toasts.
+- **7-Language Native Font Localization**: Full typography support for **English**, **中文 (Chinese)**, **한국어 (Korean)**, **Español (Spanish)**, **Deutsch (German)**, **Français (French)**, and **العربية (Arabic)**.
+- **Customizable Top-Center Status Bar HUD (`F5` / `F4` Sync)**: Toggleable translucent status bar showing live time, phase, day/season, purse coins, treasury balance, and gems, with configurable hotkey (`F4` Monitor HUD sync or dedicated key) and background opacity (`0%`–`95%`).
+- **Dual-Side Wall Forest Clearing & Render Safety**: Safely clears trees outward from both West and East perimeter walls in a single action with vagrant/merchant sanctuary protection and click cooldown.
+- **Fire Arrows & Performance Optimization**: Standalone Flaming Arrows without forced fire-rate multiplier, low-overhead `hk_ArcherUpdate` fast-exit & cached tower checks, throttled Instant Build scans, and non-blocking snapshot UI telemetry.
+- **Bottom-Right On-Screen Action Toasts**: Real-time visual feedback notifications for hotkey toggles, spawns, drops, banking actions, and config save/load.
+- **Royal Banking & Treasury Sync**: Direct vault deposit/withdraw, automatic purse overflow & ground coin sweeper, bounds-checked balance sync, and snapshot-backed vault unlock state across islands.
+- **Knight Squad Tactical Transfer & Boat Automation**: Rally knight squads cleanly between West and East walls, and complete/launch island shipwrecks automatically.
 
 ---
 
@@ -78,17 +76,17 @@ This project revitalizes the legacy mod into a standalone, crash-free, zero-depe
 - **Weather & Season Controller**: Switch instantaneously between Spring, Summer, Autumn, or Winter, lock eternal summer, or set Clear, Rain, Fog, or Storm weather.
 - **Time Controls**: Skip days, fast-forward to dawn or nightfall, and disable Blood Moons.
 
-### 5. Symmetrical Panoramic Minimap (F2)
+### 5. Symmetrical Panoramic Minimap (M)
 - **Dead-Center Castle Projection**: Symmetrical dual-wing coordinate system pins the Castle/Campfire at the exact 50% dead-center of the screen regardless of island terrain asymmetry.
-- **Full Island Tracking**: Real-time positions of your Monarch, Castle, Walls, Portals, Vagrant Camps, Hermits, Steeds, and Greed waves.
+- **Full Island Tracking**: Real-time positions of your Monarch, Castle, Walls, Portals, Vagrant Camps, Hermits, Steeds, and Greed waves (`Ctrl+F` toggles Full Island Reveal).
 - **Interactive POI Context Menu**: Right-click any minimap icon to Teleport Here, Recruit Vagrants, Destroy Portals, or Repair Walls.
 - **Quick Filter Pills**: Toggle specific categories (All, Camps, Mounts, Shrines/Chests, Defense, Threats) with zero frame stutter.
 
-### 6. Kingdom Monitor HUD (F4)
+### 6. Kingdom Monitor HUD (F4) & Top Status Bar (F5)
 - **Real-Time Census**: Live demographic breakdown (Peasants, Archers, Builders, Knights, Squires, Pikemen, Ninjas, Farmers, Beggars).
 - **Fortifications & Economy**: Fortified perimeter status, standing walls, portal counts, purse coins, vault coins, and gems.
-- **Mount Telemetry**: Active steed name, mount feed status, and live stamina gauge.
-- **Customizable Appearance**: Dynamic alpha transparency adjustment and customizable visual themes.
+- **Mount Telemetry**: Active steed name, mount feed status, and live stamina gauge (`N` toggles the Mount Stamina Bar).
+- **Customizable Appearance & Top Bar**: Configurable F5 / F4-sync Top Status Bar hotkey, adjustable background opacity sliders, and full 7-language localization including Right-to-Left (RTL) Arabic.
 
 ---
 
@@ -101,13 +99,14 @@ This project revitalizes the legacy mod into a standalone, crash-free, zero-depe
 | Hotkey | Action |
 |---|---|
 | **F1** or **Insert** | Toggle Main Enhancement Menu |
-| **F2** | Toggle Symmetrical Panoramic Top Minimap |
-| **F3** | Toggle Fast Forward Speed |
 | **F4** | Toggle Kingdom Monitor HUD |
+| **F5** | Toggle Top-Center Status Bar HUD (configurable or sync with F4) |
+| **M** | Toggle Symmetrical Panoramic Top Minimap |
+| **N** | Toggle Mount Stamina Gauge |
+| **Ctrl + F** | Toggle Minimap Full Island Reveal |
 | **Spacebar** | Launch Catapult Boulder (in facing direction) |
 | **C** | Drop Coins (Configurable burst amount) |
 | **G** | Drop Gems (Configurable burst amount) |
-| **F** | Trigger Equipped Special Weapon / Relic Ability |
 
 *All hotkeys can be fully customized in-game via **Menu -> Settings** or directly in `KingdomEnhanced.ini`.*
 
@@ -119,13 +118,11 @@ This project revitalizes the legacy mod into a standalone, crash-free, zero-depe
 
 </div>
 
-1. Download the latest release archive (`KingdomEnhanced-v0.5.0-alpha.zip`).
-2. Extract the archive contents:
-   - `version.dll`
-   - `KingdomEnhanced.ini` (optional default configuration)
-3. Move `version.dll` and `KingdomEnhanced.ini` directly into your Kingdom Two Crowns game folder (the directory containing `KingdomTwoCrowns.exe`):
+1. Download the latest release archive (`KingdomEnhanced-v0.6.0-alpha.zip`).
+2. Extract the archive contents (`version.dll` and `README.txt`).
+3. Move `version.dll` directly into your Kingdom Two Crowns game folder (the directory containing `KingdomTwoCrowns.exe`):
    - *Example Steam path*: `C:\Program Files (x86)\Steam\steamapps\common\Kingdom Two Crowns\`
-4. Launch the game normally and press **F1** to open the menu.
+4. Launch the game normally and press **F1** to open the menu (`KingdomEnhanced.ini` is auto-generated on first launch).
 
 ### Uninstallation
 Simply delete `version.dll` and `KingdomEnhanced.ini` from your game folder. The original game files remain completely untouched.
@@ -142,7 +139,7 @@ The mod automatically generates and maintains `KingdomEnhanced.ini` in the game 
 
 ```ini
 [General]
-Language=English      ; English, Chinese, Korean, Spanish, German, French
+Language=English      ; English, Chinese, Korean, Spanish, German, French, Arabic
 
 [Modules]
 EnableMinimap=1       ; Panoramic top radar map

@@ -2,7 +2,7 @@
 
 # Kingdom Enhanced
 
-[![Release](https://img.shields.io/badge/Release-v0.6.3--alpha-gold.svg)](https://github.com/Zaykus/KingdomEnhanced/releases)
+[![Release](https://img.shields.io/badge/Release-v0.6.4--alpha-gold.svg)](https://github.com/Zaykus/KingdomEnhanced/releases)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20x64%20(DirectX%2011%20%2F%2012)-blue.svg)](#)
 [![Unity Engine](https://img.shields.io/badge/Unity-IL2CPP%2064--bit-lightgrey.svg)](#)
 [![License](https://img.shields.io/badge/License-MIT%20%2F%20Educational-green.svg)](#legal-disclaimer--eula-compliance)
@@ -21,7 +21,7 @@ Created by **Zaykus** as the official standalone continuation and complete nativ
 
 <div align="center">
 
-## What's New in v0.6.0-alpha
+## What's New in v0.6.4-alpha
 
 </div>
 
@@ -118,7 +118,7 @@ This release expands native performance, localization, construction QoL, and tes
 
 </div>
 
-1. Download the latest release archive (`KingdomEnhanced-v0.6.0-alpha.zip`).
+1. Download the latest release archive (`KingdomEnhanced-v0.6.4-alpha.zip`).
 2. Extract the archive contents (`version.dll` and `README.txt`).
 3. Move `version.dll` directly into your Kingdom Two Crowns game folder (the directory containing `KingdomTwoCrowns.exe`):
    - *Example Steam path*: `C:\Program Files (x86)\Steam\steamapps\common\Kingdom Two Crowns\`
